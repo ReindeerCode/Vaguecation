@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
+  text-transform: uppercase;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/** -------------start scroll bar -------------------------- */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar {
+  width: 8px;
+  height: 1px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar-button {
+  background-color: transparent;
 }
-
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
 }
+::-webkit-scrollbar-thumb {
+  height: auto;
+  background-color: rgb(0, 123, 255);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+::-webkit-resizer {
+  background-color: transparent;
+}
+/** ---------------- End scroll bar -------------------------- */

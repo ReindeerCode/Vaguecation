@@ -1,7 +1,8 @@
 import React from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Button, fill } from "react-bootstrap";
 // import { Switch, Route, Link } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
+// import "./BlueNav.css";
 
 function BlueNav() {
   return (
@@ -32,14 +33,16 @@ function BlueNav() {
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="m-auto nav-text">
                   <Link smooth={true} to="#home">
-                    Home
+                    <Button variant="primary">Home</Button>
                   </Link>
-                  <Nav.Link href="#what">What?</Nav.Link>
-                  <Nav.Link size="lg" href="#randomize">
-                    Randomize
-                  </Nav.Link>
+                  <Link smooth={true} href="#what">
+                    <Button variant="primary">What?</Button>
+                  </Link>
+                  <Link smooth={true} size="lg" href="#randomize">
+                    <Button variant="primary">Randomize</Button>
+                  </Link>
                   <Link smooth={true} to="#contact">
-                    Questions
+                    <Button variant="primary">Contact Us</Button>
                   </Link>
                 </Nav>
               </Navbar.Collapse>

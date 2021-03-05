@@ -1,4 +1,6 @@
-** ----------------- contactBTN component ------------------ .btn-main-offer {
+/***----------------- contactBTN component ----------------------*/
+
+.btn-main-offer {
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   margin: 2rem;
@@ -10,9 +12,9 @@
   background: none;
 }
 .contact-btn2 {
-  margin: 1rem 0 0 0;
-  width: 100%;
-  background: none;
+  margin: 1rem 0 0 0 !important;
+  width: 100% !important;
+  background: none !important;
 }
 /*** ------------ End contactBTN component  -------------------*/
 

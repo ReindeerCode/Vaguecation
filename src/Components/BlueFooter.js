@@ -23,17 +23,12 @@ const Footer = () => {
       }}
       className=" container text-center sticky-bottom font-small pt-4 "
     >
-      <MDBContainer fluid className="text-center ">
+      <MDBContainer fluid>
         <MDBRow className="d-flex justify-content-center">
-          <MDBCol md="6">
-            <h5 className="title">Thanks for coming!</h5>
-            <p>
-              I am extremely excited to take the leap into programming and I
-              love talking about it. Please feel free to reach out to me anytime
-              through any of these icon links.
-            </p>
+          <MDBCol md="12">
+            <h6>Come again soon!</h6>
           </MDBCol>
-          <MDBCol md="2" sm="4">
+          {/* <MDBCol md="2" sm="4">
             <div className="list-unstyled fontA-icons">
               <href
                 onClick={() =>
@@ -47,8 +42,8 @@ const Footer = () => {
                 />
               </href>
             </div>
-          </MDBCol>
-          <MDBCol md="2" sm="4">
+          </MDBCol> */}
+          {/* <MDBCol md="2" sm="4">
             <div className="list-unstyled fontA-icons">
               <href
                 onClick={() =>
@@ -64,8 +59,8 @@ const Footer = () => {
                 />
               </href>
             </div>
-          </MDBCol>
-          <MDBCol md="2" sm="4">
+          </MDBCol> */}
+          {/* <MDBCol md="2" sm="4">
             <div className="list-unstyled fontA-icons">
               <href
                 onClick={() =>
@@ -81,13 +76,13 @@ const Footer = () => {
                 />
               </href>
             </div>
-          </MDBCol>
+          </MDBCol> */}
         </MDBRow>
       </MDBContainer>
-      <div className="footer-copyright text-center py-3">
+      <div className="footer-copyright text-center py-1">
         <MDBContainer fluid>
           &copy; {new Date().getFullYear()} Copyright:{" "}
-          <a href="https://github.com/ReindeerCode"> Michael Rudolph </a>
+          <a href="https://github.com/ReindeerCode"> Vaguecation </a>
         </MDBContainer>
       </div>
     </MDBFooter>

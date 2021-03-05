@@ -11,7 +11,7 @@
   background: none;
 }
 .contact-btn2 {
-  margin: 1rem 0 0 0 !important;
+  margin: 1rem 0 2rem 4rem !important;
   width: 75% !important;
   background: none !important;
 }
@@ -22,6 +22,7 @@
 #contact {
   margin-top: 15rem;
   margin-bottom: 15rem;
+  
 }
 .display-1 {
   color: orange;
@@ -114,6 +115,11 @@ textarea.form-control {
 /*** ----------------- End Contact ---------------------------*/
 
 @media (max-width: 768px) {
+  .contact-btn2 {
+    margin: 1rem 0 2rem 2.5rem !important;
+    width: 75% !important;
+    background: none !important;
+  }
   .typed-text {
     font-size: 1.1rem;
     color: white;

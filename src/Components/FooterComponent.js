@@ -8,10 +8,10 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 //   faLinkedin,
 // } from "@fortawesome/free-brands-svg-icons";
 
-const openSiteNewTab = (url) => {
-  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-  if (newWindow) newWindow.opener = null;
-};
+// const openSiteNewTab = (url) => {
+//   const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+//   if (newWindow) newWindow.opener = null;
+// };
 
 const Footer = () => {
   return (

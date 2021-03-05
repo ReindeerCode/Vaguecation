@@ -1,34 +1,37 @@
 /***----------------- contactBTN component ----------------------*/
 
+.col-md-3,
+.col-md-4 {
+  padding: 1rem;
+
+  text-align: center;
+}
+
 .btn-main-offer {
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   margin: 2rem;
 }
 
-.about-btn1 {
-  margin: 1rem 0 0 0;
-  background: none;
-}
-.about-btn2 {
-  margin: 1rem 0 0 0 !important;
-  width: 75% !important;
-  background: none !important;
-}
 /*** ------------ End contactBTN component  -------------------*/
 
 /*** ----------------- Contact -------------------------------*/
 
+#about-text {
+  color: whitesmoke;
+}
+
+#tunnel {
+  margin-top: 20rem;
+}
+#rock-img {
+  margin-top: 25%;
+}
 #about {
   margin-top: 15rem;
   margin-bottom: 15rem;
 }
 .display-1 {
-  color: orange;
-  /* font-weight: bold; */
-}
-
-#contactP {
   color: orange;
   /* font-weight: bold; */
 }
@@ -150,5 +153,12 @@ textarea.form-control {
     text-align: center;
     /* z-index: 2; */
     /* background-color: rgba(0, 0, 0, 0.7); */
+  }
+
+  #tunnel {
+    margin-top: 5rem;
+  }
+  #rock-img {
+    margin-top: 0%;
   }
 }

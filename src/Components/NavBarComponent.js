@@ -17,6 +17,7 @@ function NavBar() {
           width: "100%",
           display: "flex",
           marginTop: 10,
+          zIndex: 1,
         }}
       >
         <Container>

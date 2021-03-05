@@ -6,6 +6,10 @@ video {
   z-index: -2;
 }
 
+#send_to_back {
+  z-index: -1;
+}
+
 .video-container {
   height: 100vh;
   width: 100%;

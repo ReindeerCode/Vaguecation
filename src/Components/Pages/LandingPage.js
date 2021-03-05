@@ -6,12 +6,12 @@ import Contact from "./ContactPage";
 
 function Landing() {
   return (
-    <>
+    <div id="send_to_back">
       <VideoSection />
       <About />
       <RandomCards />
       <Contact />
-    </>
+    </div>
   );
 }
 

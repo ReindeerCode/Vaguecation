@@ -1,7 +1,7 @@
 import React from "react";
 // import "./App.css";
 import { Button } from "react-bootstrap";
-import "./VideoSection.css";
+import "./LandingComponent.css";
 
 function VideoSection() {
   return (
@@ -15,11 +15,11 @@ function VideoSection() {
         alt="Vaguecation Logo"
       />
       <h1>Where will life take you?</h1>
-      <div className="video-btns">
+      {/* <div className="video-btns">
         <Button id="videoBTN" variant="primary" size="lg">
           Get Started
         </Button>
-      </div>
+      </div> */}
     </div>
   );
 }

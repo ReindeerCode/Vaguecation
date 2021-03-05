@@ -1,24 +1,26 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
-import BlueNav from "./Components/BlueNav";
-import BlueFooter from "./Components/BlueFooter";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Landing from "./Components/Pages/Landing";
+import "./App.css";
+import NavBar from "./Components/NavBarComponent";
+import Landing from "./Components/Pages/LandingPage";
+import About from "./Components/Pages/AboutPage";
+import RandomCards from "./Components/Pages/RandomizePage";
 import Contact from "./Components/Pages/ContactPage";
+import Footer from "./Components/FooterComponent";
 
 function App() {
   return (
     <>
       <Router>
-        <BlueNav />
+        <NavBar />
         <Switch>
           <Route path="/" exact component={Landing} />
-          {/* <Route path="/what" component={What} />
-        <Route path="/randomize" component={Randomize} /> */}
+          <Route path="/about" component={About} />
+          <Route path="/randomize" component={RandomCards} />
           <Route path="/contact" component={Contact} />
         </Switch>
-        <BlueFooter />
+        <Footer />
       </Router>
     </>
   );

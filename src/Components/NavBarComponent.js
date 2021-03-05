@@ -1,10 +1,14 @@
 import React from "react";
-import { Navbar, Nav, Container, Button, fill } from "react-bootstrap";
-// import { Switch, Route, Link } from "react-router-dom";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { HashLink as Link } from "react-router-hash-link";
-// import "./BlueNav.css";
 
-function BlueNav() {
+const scrollWithOffset = (el) => {
+  const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  const yOffset = -110;
+  window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+};
+
+function NavBar() {
   return (
     <>
       <div
@@ -35,13 +39,25 @@ function BlueNav() {
                   <Link smooth={true} to="#home">
                     <Button variant="primary">Home</Button>
                   </Link>
-                  <Link smooth={true} href="#what">
-                    <Button variant="primary">What?</Button>
+                  <Link
+                    smooth={true}
+                    to="#about"
+                    scroll={(el) => scrollWithOffset(el)}
+                  >
+                    <Button variant="primary">About</Button>
                   </Link>
-                  <Link smooth={true} size="lg" href="#randomize">
+                  <Link
+                    smooth={true}
+                    to="#randomize"
+                    scroll={(el) => scrollWithOffset(el)}
+                  >
                     <Button variant="primary">Randomize</Button>
                   </Link>
-                  <Link smooth={true} to="#contact">
+                  <Link
+                    smooth={true}
+                    to="#contact"
+                    scroll={(el) => scrollWithOffset(el)}
+                  >
                     <Button variant="primary">Contact Us</Button>
                   </Link>
                 </Nav>
@@ -54,4 +70,4 @@ function BlueNav() {
   );
 }
 
-export default BlueNav;
+export default NavBar;

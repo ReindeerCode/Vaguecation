@@ -4,20 +4,16 @@ import { useForm } from "react-hook-form";
 import "./ContactPage.css";
 import { Container } from "react-bootstrap";
 
-const {
-  REACT_APP_SERVICE_ID,
-  REACT_APP_TEMPLATE_ID,
-  REACT_APP_USER_ID,
-} = process.env;
+// import ContactVideoSection from "../ContactVideoSection";
 
-const Contact = () => {
+const Package = () => {
   // <ContactVideoSection />;
   const [successMessage, setSuccessMessage] = useState("");
   const { register, handleSubmit, errors } = useForm();
 
-  const serviceID = `${REACT_APP_SERVICE_ID}`;
-  const templateID = `${REACT_APP_TEMPLATE_ID}`;
-  const userID = `${REACT_APP_USER_ID}`;
+  const serviceID = "service_w8qt8iu";
+  const templateID = "template_068y2ai";
+  const userID = "user_mvnMabWzmIj0perWUEN5p";
 
   const onSubmit = (data, r) => {
     sendEmail(
@@ -48,8 +44,8 @@ const Contact = () => {
 
   return (
     <>
-      <Container id="contact" className="contact">
-        <div>
+      <Container className="contact">
+        <div id="contact">
           <div className="text-center">
             <h1 className="display-1">Contact Us</h1>
             <p id="contactP">
@@ -169,4 +165,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Package;

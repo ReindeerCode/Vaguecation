@@ -1,12 +1,12 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import {
-  faFacebook,
-  faGithub,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+// import {
+//   faFacebook,
+//   faGithub,
+//   faLinkedin,
+// } from "@fortawesome/free-brands-svg-icons";
 
 const openSiteNewTab = (url) => {
   const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -80,10 +80,10 @@ const Footer = () => {
         </MDBRow>
       </MDBContainer>
       <div className="footer-copyright text-center py-1">
-        <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright:{" "}
-          <a href="https://github.com/ReindeerCode"> Vaguecation </a>
-        </MDBContainer>
+        {/* <MDBContainer fluid> */}
+        &copy; {new Date().getFullYear()} Copyright:{" "}
+        <a href="https://github.com/ReindeerCode"> Vaguecation </a>
+        {/* </MDBContainer> */}
       </div>
     </MDBFooter>
   );

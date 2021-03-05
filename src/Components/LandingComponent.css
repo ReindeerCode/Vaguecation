@@ -3,7 +3,7 @@ video {
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: -1;
+  z-index: -2;
 }
 
 .video-container {
@@ -32,7 +32,8 @@ h1 {
 }
 
 #videoBTN {
-  margin-top: 2px;
+  margin-top: 0.313rem;
+  margin-bottom: 0.313rem;
 }
 @media screen and (max-width: 600px) {
   h1 {

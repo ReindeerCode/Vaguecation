@@ -4,6 +4,10 @@
   text-transform: uppercase;
 }
 
+/* button:hover {
+  transition: transform 0.5s;
+  transform: scale(1.1) !important;
+} */
 /** -------------start scroll bar -------------------------- */
 
 ::-webkit-scrollbar {

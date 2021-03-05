@@ -1,0 +1,11 @@
+/* #randomize {
+  z-index: -1 !important;
+  position: relative;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+} */
+
+#randomize {
+  margin-top: 30rem;
+  margin-bottom: 30rem;
+}

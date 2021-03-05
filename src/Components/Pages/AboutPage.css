@@ -6,11 +6,11 @@
   margin: 2rem;
 }
 
-.contact-btn1 {
+.about-btn1 {
   margin: 1rem 0 0 0;
   background: none;
 }
-.contact-btn2 {
+.about-btn2 {
   margin: 1rem 0 0 0 !important;
   width: 75% !important;
   background: none !important;
@@ -19,7 +19,7 @@
 
 /*** ----------------- Contact -------------------------------*/
 
-#contact {
+#about {
   margin-top: 15rem;
   margin-bottom: 15rem;
 }
@@ -33,21 +33,21 @@
   /* font-weight: bold; */
 }
 
-.contact {
+.about {
   /* padding: 3rem 0; */
   box-shadow: inset 0 0 0 62.5rem rgba(0, 0, 0, 0.7);
 }
 
-.contact h1 {
+.about h1 {
   padding: 1.3rem 0;
 }
 
-.contact p {
+.about p {
   font-size: 1.2rem;
 }
 
-.contact input,
-.contact textarea {
+.about input,
+.about textarea {
   width: 100%;
   box-sizing: border-box;
   background: none;
@@ -63,17 +63,17 @@
   padding-left: 0 !important;
 }
 
-.contact .container {
+.about .container {
   padding: 4rem 0;
 }
 
-.contact input:focus,
-.contact textarea:focus {
+.about input:focus,
+.about textarea:focus {
   background: transparent;
   color: orange;
   border-bottom: 0.125rem solid #eee;
 }
-.contact textarea {
+.about textarea {
   height: 12.2rem !important;
 }
 
@@ -131,10 +131,10 @@ textarea.form-control {
     font-size: 0.8rem;
   }
 
-  .contact .container {
+  .about .container {
     padding: 0 1rem;
   }
-  .contact p {
+  .about p {
     padding: 0 1rem;
   }
   .main-info {

@@ -1,8 +1,11 @@
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import BlueNav from "./Components/Navbar";
-import Footer from "./Components/Footer";
+import BlueNav from "./Components/BlueNav";
+import BlueFooter from "./Components/BlueFooter";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Landing from "./Components/Pages/Landing";
+import Contact from "./Components/Pages/ContactPage";
 
 function App() {
   return (
@@ -10,12 +13,12 @@ function App() {
       <Router>
         <BlueNav />
         <Switch>
-          {/* <Route path="/" exact component={Landing} />
-        <Route path="/what" component={What} />
-        <Route path="/randomize" component={Randomize} />
-        <Route path="/contact" component={Contact} /> */}
+          <Route path="/" exact component={Landing} />
+          {/* <Route path="/what" component={What} />
+        <Route path="/randomize" component={Randomize} /> */}
+          <Route path="/contact" component={Contact} />
         </Switch>
-        <Footer />
+        <BlueFooter />
       </Router>
     </>
   );

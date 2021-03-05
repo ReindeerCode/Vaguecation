@@ -1,7 +1,6 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./Footer.css";
 
 import {
   faFacebook,
@@ -17,11 +16,15 @@ const openSiteNewTab = (url) => {
 const Footer = () => {
   return (
     <MDBFooter
-      style={{ backgroundColor: "rgb(0,123,255)" }}
-      className=" text-center sticky-bottom font-small pt-4 "
+      style={{
+        backgroundColor: "rgb(0,123,255)",
+        marginBottom: 10,
+        marginTop: 15,
+      }}
+      className=" container text-center sticky-bottom font-small pt-4 "
     >
       <MDBContainer fluid className="text-center ">
-        <MDBRow classname="d-flex justify-content-center">
+        <MDBRow className="d-flex justify-content-center">
           <MDBCol md="6">
             <h5 className="title">Thanks for coming!</h5>
             <p>

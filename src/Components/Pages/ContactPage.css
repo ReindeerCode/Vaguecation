@@ -1,0 +1,148 @@
+** ----------------- contactBTN component ------------------ .btn-main-offer {
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  margin: 2rem;
+}
+
+.contact-btn1 {
+  margin: 1rem 0 0 0;
+
+  background: none;
+}
+.contact-btn2 {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+}
+/*** ------------ End contactBTN component  -------------------*/
+
+/*** ----------------- Contact -------------------------------*/
+.display-1 {
+  color: orange;
+  /* font-weight: bold; */
+}
+
+#contactP {
+  color: orange;
+  /* font-weight: bold; */
+}
+
+.contact {
+  /* padding: 3rem 0; */
+  box-shadow: inset 0 0 0 62.5rem rgba(0, 0, 0, 0.7);
+}
+
+.contact h1 {
+  padding: 1.3rem 0;
+}
+
+.contact p {
+  font-size: 1.2rem;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid #eee;
+  border-radius: 0;
+  color: orange;
+  outline: 0 !important;
+  box-shadow: none !important;
+  top: 0;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+
+.contact .container {
+  padding: 4rem 0;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  background: transparent;
+  color: orange;
+  border-bottom: 0.125rem solid #eee;
+}
+.contact textarea {
+  height: 12.2rem !important;
+}
+
+.line {
+  position: relative;
+  width: 0;
+  height: 0.125rem;
+  top: -0.8rem;
+  background: orange;
+  display: inline-block;
+}
+
+input:focus + .line,
+textarea:focus + .line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+input.form-control {
+  margin: -0.3rem 0;
+}
+textarea.form-control {
+  margin: -0.3rem 0;
+}
+
+.error-message {
+  color: orange;
+  /* background: orange; */
+  text-align: left;
+}
+
+.success-message {
+  color: green;
+
+  /* background: orange; */
+  text-align: left;
+}
+/*** ----------------- End Contact ---------------------------*/
+
+@media (max-width: 768px) {
+  .typed-text {
+    font-size: 1.1rem;
+    color: white;
+  }
+  .display-1 {
+    font-size: 3rem;
+    color: orange;
+    /* font-weight: bold; */
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .contact .container {
+    padding: 0 1rem;
+  }
+  .contact p {
+    padding: 0 1rem;
+  }
+  .main-info {
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* z-index: 2; */
+    /* background-color: rgba(0, 0, 0, 0.7); */
+  }
+}

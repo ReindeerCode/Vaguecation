@@ -1,0 +1,41 @@
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.video-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: inset 0 0 0 62.5rem rgba(0, 0, 0, 0.2); */
+  object-fit: contain;
+}
+
+#logo {
+  margin-top: 15rem;
+  width: 20rem;
+  height: auto;
+}
+
+.video-container > h1 {
+  color: whitesmoke;
+  font-size: 6.25;
+}
+h1 {
+  font-size: 3vw !important;
+}
+
+#videoBTN {
+  margin-top: 2px;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 5vw !important;
+  }
+}

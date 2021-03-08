@@ -12,7 +12,7 @@ function rockTravelImg() {
     <div>
       <img
         src={rock_travel}
-        style={{ maxWidth: "100%", maxHeight: "100%" }}
+        style={{ maxWidth: "100%", maxHeight: "100%", marginTop: "75%" }}
         alt="rock and escalator"
       />
     </div>
@@ -24,8 +24,8 @@ function colorTravelImg() {
     <div>
       <img
         src={color_travel}
-        style={{ maxWidth: "100%", maxHeight: "100%" }}
-        alt="rock and escalator"
+        style={{ maxWidth: "100%", maxHeight: "100%", marginTop: "20rem" }}
+        alt="colorful tunnel"
       />
     </div>
   );
@@ -37,7 +37,7 @@ function waterfallTravelImg() {
       <img
         src={waterfall}
         style={{ maxWidth: "100%", maxHeight: "100%" }}
-        alt="rock and escalator"
+        alt="waterfall"
       />
     </div>
   );
@@ -48,8 +48,8 @@ function driveTravelImg() {
     <div>
       <img
         src={drive}
-        style={{ maxWidth: "100%", maxHeight: "100%" }}
-        alt="rock and escalator"
+        style={{ maxWidth: "100%", maxHeight: "100%", marginBottom: "2rem" }}
+        alt="drive in desert"
       />
     </div>
   );
@@ -102,13 +102,15 @@ const About = () => {
               do the work for us. Now all anyone has to do know they want to go
               somewhere and Vaguecation with send you an email with the details.{" "}
             </p>
+
+            <h1 className="display-1">What's the catch?</h1>
             <p>
               There's no catch. Go, don't go. Just click the button a hundred
               times since you have time to. It doesn't cost you a dime and
               maybe, just maybe, you'll have the vacation of a lifetime.
             </p>
           </MDBCol>
-          <MDBCol className="between" md="3">
+          <MDBCol md="3">
             <MDBRow>{waterfallTravelImg()}</MDBRow>
 
             <MDBRow id="tunnel">{colorTravelImg()}</MDBRow>
@@ -120,32 +122,6 @@ const About = () => {
           <MDBCol md="3"></MDBCol>
         </MDBRow>
       </MDBContainer>
-      {/* <Container id="about" className="about">
-        <div>
-          <div className="text-center">
-            <h1 className="display-1">What Vaguecation is all about...</h1>
-          </div>
-          <Container fluid id="about-text">
-            <Row style={{ border: "5px solid white" }}>
-              <Col style={{ border: "5px solid white" }}>
-                <Row style={{ border: "1px solid white" }}>
-                  {rockTravelImg()}
-                </Row>
-              </Col>
-              <Col>
-                <Row style={{ border: "1px solid white" }}>1B</Row>
-              </Col>
-              <Col>
-                <Row style={{ border: "1px solid white" }}>
-                  {colorTravelImg()}
-                </Row>
-              </Col>
-            </Row>
-          </Container>
-
-          <div className="container"></div>
-        </div>
-      </Container> */}
     </>
   );
 };

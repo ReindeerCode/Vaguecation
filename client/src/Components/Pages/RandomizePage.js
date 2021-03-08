@@ -34,12 +34,17 @@ function RandomCards() {
             <blockquote className="blockquote mb-0 card-body">
               <Button size="lg">Mystery Box</Button>
               <h4 style={{ marginTop: "1rem" }}>
-                Step 1 - Enter email and Zipcode
+                Step 1 - Enter your Email, Zipcode and how long you'll be
+                Vacation.
               </h4>
               <input style={{ marginTop: "1rem" }} placeholder="Email"></input>
               <input
                 style={{ marginTop: "1rem" }}
                 placeholder="Zipcode"
+              ></input>
+              <input
+                style={{ marginTop: "1rem" }}
+                placeholder="Days on Vacation"
               ></input>
               <h4 style={{ marginTop: "1rem" }}>
                 Step 2 - Click any image to be emailed a Vaguecation

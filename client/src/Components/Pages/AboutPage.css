@@ -15,18 +15,11 @@
 
 /*** ------------ End contactBTN component  -------------------*/
 
-/*** ----------------- Contact -------------------------------*/
-
 #about-text {
   color: whitesmoke;
+  word-spacing: 0.8em;
 }
 
-#tunnel {
-  margin-top: 20rem;
-}
-#rock-img {
-  margin-top: 25%;
-}
 #about {
   margin-top: 15rem;
   margin-bottom: 15rem;
@@ -69,52 +62,6 @@
 .about .container {
   padding: 4rem 0;
 }
-
-.about input:focus,
-.about textarea:focus {
-  background: transparent;
-  color: orange;
-  border-bottom: 0.125rem solid #eee;
-}
-.about textarea {
-  height: 12.2rem !important;
-}
-
-.line {
-  position: relative;
-  width: 0;
-  height: 0.125rem;
-  top: -0.8rem;
-  background: orange;
-  display: inline-block;
-}
-
-input:focus + .line,
-textarea:focus + .line {
-  width: 100%;
-  transition: width 0.5s ease-in-out;
-}
-
-input.form-control {
-  margin: -0.3rem 0;
-}
-textarea.form-control {
-  margin: -0.3rem 0;
-}
-
-.error-message {
-  color: orange;
-  /* background: orange; */
-  text-align: left;
-}
-
-.success-message {
-  color: green;
-
-  /* background: orange; */
-  text-align: left;
-}
-/*** ----------------- End Contact ---------------------------*/
 
 @media (max-width: 768px) {
   .typed-text {
@@ -159,6 +106,6 @@ textarea.form-control {
     margin-top: 5rem;
   }
   #rock-img {
-    margin-top: 0%;
+    margin-top: -30%;
   }
 }

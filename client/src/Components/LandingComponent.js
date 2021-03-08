@@ -15,11 +15,6 @@ function VideoSection() {
         alt="Vaguecation Logo"
       />
       <h1>Where will life take you?</h1>
-      {/* <div className="video-btns">
-        <Button id="videoBTN" variant="primary" size="lg">
-          Get Started
-        </Button>
-      </div> */}
     </div>
   );
 }

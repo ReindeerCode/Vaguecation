@@ -2,53 +2,26 @@
   "name": "vaguecation",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "-": "0.0.1",
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
-    "@fortawesome/free-brands-svg-icons": "^5.15.2",
-    "@fortawesome/free-regular-svg-icons": "^5.15.2",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.7.2",
-    "bootstrap": "^4.6.0",
-    "emailjs-com": "^2.6.4",
-    "mdbreact": "^5.0.1",
-    "react": "^17.0.1",
-    "react-bootstrap": "^1.5.1",
-    "react-dom": "^17.0.1",
-    "react-hook-form": "^6.15.4",
-     "react-router-dom": "^5.2.0",
-    "react-router-hash-link": "^2.4.0",
-    "react-scripts": "^4.0.3",
-    "react-scroll": "^1.8.1",
-    "react-typed": "^1.2.0",
-    "s": "^1.0.0",
-    "web-vitals": "^1.1.0"
-  },
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build",
+    "seed": "node scripts/seedDB.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "concurrently": "^6.0.0",
+    "emailjs-com": "^2.6.4",
+    "express": "^4.16.3",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.8.11"
   }
 }

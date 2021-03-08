@@ -6,7 +6,7 @@ import { Container } from "react-bootstrap";
 
 const {
   REACT_APP_SERVICE_ID,
-  REACT_APP_TEMPLATE_ID,
+  REACT_APP_CONTACT_TEMPLATE_ID,
   REACT_APP_USER_ID,
 } = process.env;
 
@@ -16,7 +16,7 @@ const Contact = () => {
   const { register, handleSubmit, errors } = useForm();
 
   const serviceID = `${REACT_APP_SERVICE_ID}`;
-  const templateID = `${REACT_APP_TEMPLATE_ID}`;
+  const templateID = `${REACT_APP_CONTACT_TEMPLATE_ID}`;
   const userID = `${REACT_APP_USER_ID}`;
 
   const onSubmit = (data, r) => {

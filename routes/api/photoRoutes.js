@@ -25,6 +25,7 @@ router.route("/photos").get((req, res) => {
     .getPhotos({ query: "travel", per_page: 5 })
     .then((results) => {
       res.json(results);
+      console.log(results);
     });
 });
 

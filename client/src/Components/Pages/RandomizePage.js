@@ -6,10 +6,9 @@ import { VacationCard } from "../customs/VacationCard";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
 import { API } from "../Utils/API";
+require("dotenv").config();
 
 const {
-  REACT_APP_UNSPLASH_API_Key,
-  REACT_APP_UNSPLASH_Security_Key,
   REACT_APP_SERVICE_ID,
   REACT_APP_VACATION_TEMPLATE_ID,
   REACT_APP_USER_ID,
@@ -34,8 +33,8 @@ function RandomCards() {
       serviceID,
       templateID,
       {
-        Zipcode: data.Zipcode,
         email: data.email,
+        Zipcode: data.Zipcode,
       },
       userID
     );
@@ -56,13 +55,11 @@ function RandomCards() {
       <Container id="randomize">
         <form onSubmit={handleSubmit(onSubmit)}>
           <CardColumns>
-            <Button
-              style={{ marginTop: "2rem" }}
-              variant="outline-primary"
-            ></Button>
             {results.length
               ? results.map((result, index) => {
-                  return <VacationCard src={result.urls.small} />;
+                  return (
+                    <VacationCard key={result.id} src={result.urls.small} />
+                  );
                 })
               : ""}
 
@@ -121,6 +118,13 @@ function RandomCards() {
                 <span className="success-message">{successMessage}</span>
               </div>
             </Card>
+            {results.length
+              ? results.map((result, index) => {
+                  return (
+                    <VacationCard key={result.id} src={result.urls.small} />
+                  );
+                })
+              : ""}
           </CardColumns>
         </form>
       </Container>

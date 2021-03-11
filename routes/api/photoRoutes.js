@@ -12,7 +12,6 @@ router.route("/random").get((req, res) => {
   unsplash.photos
     .getRandom({ count: 10, query: "travel" })
     .then((response) => {
-      console.log(response, "this is our response");
       res.json(response);
     })
     .catch((err) => {
@@ -25,7 +24,6 @@ router.route("/photos").get((req, res) => {
     .getPhotos({ query: "travel", per_page: 5 })
     .then((results) => {
       res.json(results);
-      console.log(results);
     });
 });
 

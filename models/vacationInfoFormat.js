@@ -17,28 +17,23 @@ const travelSchema = new Schema({
         trim: true,
         required: "homeZip is required",
       },
-      vacationZip: {
+      city: {
         type: String,
         trim: true,
-        required: "vacationZip is required",
+        required: "city is required",
       },
-      hotel: {
+      region: {
         type: String,
         trim: true,
-        required: "hotel is required",
+        required: "region is required",
       },
-      restaurants: [
+      country: [
         {
           type: String,
           trim: true,
-          required: "restaurants is required",
+          required: "country is required",
         },
       ],
-      vacationDays: {
-        type: Number,
-        required: "Duration is required",
-        min: 1,
-      },
     },
   ],
 });

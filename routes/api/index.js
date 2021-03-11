@@ -1,10 +1,10 @@
 const router = require("express").Router();
-const tripRoutes = require("./tripDetails");
+const tripRoutes = require("./tripRoutes");
 const photoRoutes = require("./photoRoutes");
-const rapidRoutes = require("./rapid");
+const locationRoutes = require("./locationRoutes");
 
 router.use("/tripDetails", tripRoutes);
 router.use("/photos", photoRoutes);
-router.use("/", rapidRoutes);
+router.use("/location", locationRoutes);
 
 module.exports = router;

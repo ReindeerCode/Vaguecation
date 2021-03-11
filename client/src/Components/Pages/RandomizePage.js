@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Randomize.css";
-import { Container, CardColumns, Card, Button, Row } from "react-bootstrap";
+import { Container, CardColumns, Card, Row } from "react-bootstrap";
 import { VacationCard } from "../customs/VacationCard";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
@@ -24,7 +24,6 @@ function RandomCards() {
   useEffect(() => {
     API.getRandom().then((res) => {
       setResults(res.data.response);
-      console.log(res, "this is results");
     });
   }, []);
 
@@ -49,14 +48,13 @@ function RandomCards() {
       })
       .catch((err) => console.error(`Something went wrong ${err}`));
   };
-  console.log(results, "this out function results");
   return (
     <>
       <Container id="randomize">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <Row>
+          <Row id="stepsCard">
             <Card
-              style={{ maxWidth: "20rem" }}
+              style={{ maxWidth: "30rem" }}
               bg="primary"
               text="white"
               className="text-center "
@@ -106,7 +104,7 @@ function RandomCards() {
                 </h4>
               </div>
               <div>
-                <span>{successMessage}</span>
+                <span style={{ color: "black" }}>{successMessage}</span>
               </div>
             </Card>
           </Row>

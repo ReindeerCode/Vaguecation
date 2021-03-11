@@ -14,10 +14,9 @@ const tripSeed = [
     trip: [
       {
         homeZip: "55113",
-        vacationZip: "03275",
-        hotel: "DoubleTree",
-        restaurants: ["Pops", "Johnson's"],
-        vacationDays: 5,
+        city: "Aarons Corner",
+        region: "North Carolina",
+        country: "United States of America",
       },
     ],
   },
@@ -27,10 +26,9 @@ const tripSeed = [
     trip: [
       {
         homeZip: "03301",
-        vacationZip: "55343",
-        hotel: "DoubleTree",
-        restaurants: ["Taco John's", "Pizza Palace"],
-        vacationDays: 6,
+        city: "Aixàs",
+        region: "Sant Julià de Lòria",
+        country: "Andorra",
       },
     ],
   },

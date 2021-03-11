@@ -13,3 +13,9 @@
 h4 {
   word-spacing: 0.3em;
 }
+
+#stepsCard {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}

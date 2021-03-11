@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Randomize.css";
-import { Container, CardColumns, Card } from "react-bootstrap";
-import { Button } from "react-bootstrap";
+import { Container, CardColumns, Card, Button, Row } from "react-bootstrap";
 import { VacationCard } from "../customs/VacationCard";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
@@ -23,8 +22,9 @@ function RandomCards() {
   const userID = `${REACT_APP_USER_ID}`;
 
   useEffect(() => {
-    API.getPhotos().then((res) => {
-      setResults(res.data.response.results);
+    API.getRandom().then((res) => {
+      setResults(res.data.response);
+      console.log(res, "this is results");
     });
   }, []);
 
@@ -49,25 +49,19 @@ function RandomCards() {
       })
       .catch((err) => console.error(`Something went wrong ${err}`));
   };
-
+  console.log(results, "this out function results");
   return (
     <>
       <Container id="randomize">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <CardColumns>
-            {results.length
-              ? results.map((result, index) => {
-                  return (
-                    <VacationCard key={result.id} src={result.urls.small} />
-                  );
-                })
-              : ""}
-
-            <Card bg="primary" text="white" className="text-center p-3">
-              <blockquote className="blockquote mb-0 card-body">
-                <Button size="lg" type="submit">
-                  Mystery Box
-                </Button>
+          <Row>
+            <Card
+              style={{ maxWidth: "20rem" }}
+              bg="primary"
+              text="white"
+              className="text-center "
+            >
+              <div className="blockquote mb-0 card-body">
                 <h4 style={{ marginTop: "1rem" }}>
                   Step 1 - Enter your Email and Zipcode
                 </h4>
@@ -106,18 +100,18 @@ function RandomCards() {
                 <span className="error-message">
                   {errors.Zipcode && errors.Zipcode.message}
                 </span>
-                {/* <input
-                  style={{ marginTop: "1rem" }}
-                  placeholder="Days on Vacation"
-                ></input> */}
+
                 <h4 style={{ marginTop: "1rem" }}>
                   Step 2 - Click any image to be emailed a Vaguecation
                 </h4>
-              </blockquote>
+              </div>
               <div>
-                <span className="success-message">{successMessage}</span>
+                <span>{successMessage}</span>
               </div>
             </Card>
+          </Row>
+
+          <CardColumns>
             {results.length
               ? results.map((result, index) => {
                   return (

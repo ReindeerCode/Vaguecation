@@ -10,10 +10,10 @@ const unsplash = createApi({
 
 router.route("/random").get((req, res) => {
   unsplash.photos
-    .getRandom()
+    .getRandom({ count: 10, query: "travel" })
     .then((response) => {
-      // This is where I put all the results in the DB and then respond
-      res.json({ response });
+      console.log(response, "this is our response");
+      res.json(response);
     })
     .catch((err) => {
       res.send(err);

@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 // Define middleware here
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(routes);
 // Serve up static assets (usually on heroku)

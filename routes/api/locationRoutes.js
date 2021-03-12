@@ -8,8 +8,7 @@ const { REACT_APP_x_rapidapi_key } = process.env;
 let options = {
   method: "GET",
   url: "https://wft-geo-db.p.rapidapi.com/v1/geo/cities",
-  params: { limit: "10" },
-  // params: { countryIds: "US" },
+  params: { limit: "10", countryIds: "US" },
   headers: {
     "x-rapidapi-key": `${REACT_APP_x_rapidapi_key}`,
     "x-rapidapi-host": "wft-geo-db.p.rapidapi.com",
@@ -25,7 +24,7 @@ router.route("/location").get((req, res) => {
       let input = response.data.data;
       // console.log(input, "input here");
       let amount = input.length;
-      // console.log(amount, "amoutn here");
+      // console.log(amount, "amount here");
       let randomArray = input[Math.floor(Math.random() * amount)];
       // console.log(randomArray, "randomArray here");
       res.json(randomArray);

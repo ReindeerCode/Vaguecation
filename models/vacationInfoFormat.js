@@ -27,13 +27,11 @@ const travelSchema = new Schema({
         trim: true,
         required: "region is required",
       },
-      country: [
-        {
-          type: String,
-          trim: true,
-          required: "country is required",
-        },
-      ],
+      country: {
+        type: String,
+        trim: true,
+        required: "country is required",
+      },
     },
   ],
 });

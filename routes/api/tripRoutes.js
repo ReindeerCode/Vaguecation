@@ -1,7 +1,7 @@
-const router = require("express").Router();
+// const router = require("express").Router();
 
-router.route("/test").get((req, res) => {
-  res.json({ success: true });
-})
+// router.route("/test").get((req, res) => {
+//   res.json({ success: true });
+// })
 
-module.exports = router;
+// module.exports = router;

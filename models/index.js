@@ -1,3 +1,3 @@
 module.exports = {
-  userTravel: require("./vacationInfoFormat"),
+  travelDetails: require("./vacationInfoFormat"),
 };

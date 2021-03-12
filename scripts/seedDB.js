@@ -34,9 +34,9 @@ const tripSeed = [
   },
 ];
 
-db.userTravel
+db.travelDetails
   .remove({})
-  .then(() => db.userTravel.collection.insertMany(tripSeed))
+  .then(() => db.travelDetails.collection.insertMany(tripSeed))
   .then((data) => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);

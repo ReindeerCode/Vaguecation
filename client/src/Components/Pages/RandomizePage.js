@@ -13,6 +13,19 @@ const {
   REACT_APP_USER_ID,
 } = process.env;
 
+function loadDB() {
+  let test = API.createLocation;
+  console.log(test, "this is test");
+  // const [location, setLocation] = useState({});
+  // useEffect(() => {
+  //   API.createLocation().then((res) => {
+  //     console.log(res, "this is create Res");
+  //     setLocation(res.data.response);
+  //   });
+  // }, []);
+}
+loadDB();
+
 function RandomCards() {
   const [results, setResults] = useState({});
   const [successMessage, setSuccessMessage] = useState("");

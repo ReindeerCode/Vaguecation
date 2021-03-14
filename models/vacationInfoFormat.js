@@ -15,27 +15,27 @@ const travelSchema = new Schema({
       homeZip: {
         type: String,
         trim: true,
-        required: "homeZip is required",
+        // required: "homeZip is required",
       },
       city: {
         type: String,
         trim: true,
-        required: "city is required",
+        // required: "city is required",
       },
       region: {
         type: String,
         trim: true,
-        required: "region is required",
+        // required: "region is required",
       },
       country: {
         type: String,
         trim: true,
-        required: "country is required",
+        // required: "country is required",
       },
     },
   ],
 });
 
-const travel = mongoose.model("trip", travelSchema);
+const travel = mongoose.model("Trip", travelSchema);
 
 module.exports = travel;

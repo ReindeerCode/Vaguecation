@@ -7,7 +7,6 @@ import About from "./Components/Pages/AboutPage";
 import RandomCards from "./Components/Pages/RandomizePage";
 import Contact from "./Components/Pages/ContactPage";
 
-
 function App() {
   return (
     <>

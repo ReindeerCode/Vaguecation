@@ -1,19 +1,17 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost:27017/VaguecationDB",
-  {useNewUrlParser:true}
+  { useNewUrlParser: true }
 );
 
 const tripSeed = [
   {
-    day: new Date(),
     email: "email1@yahoo.com",
     trip: [
       {
-        homeZip: "55113",
+        day: new Date(),
         city: "Aarons Corner",
         region: "North Carolina",
         country: "United States of America",
@@ -21,11 +19,10 @@ const tripSeed = [
     ],
   },
   {
-    day: new Date(),
     email: "email2@yahoo.com",
     trip: [
       {
-        homeZip: "03301",
+        day: new Date(),
         city: "Aixàs",
         region: "Sant Julià de Lòria",
         country: "Andorra",

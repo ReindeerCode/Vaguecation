@@ -13,19 +13,7 @@ const {
   REACT_APP_USER_ID,
 } = process.env;
 
-function loadDB() {
-  let test = API.createLocation;
-  console.log(test, "this is test");
-  // const [location, setLocation] = useState({});
-  // useEffect(() => {
-  //   API.createLocation().then((res) => {
-  //     console.log(res, "this is create Res");
-  //     setLocation(res.data.response);
-  //   });
-  // }, []);
-}
-loadDB();
-
+//* generates random vacation images on page load
 function RandomCards() {
   const [results, setResults] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
@@ -40,13 +28,23 @@ function RandomCards() {
     });
   }, []);
 
-  const onSubmit = (data, r) => {
+  //* clicking any image button submits form does three things//
+  //* 1 - calls api to retrieve random city information
+  //* 2 - writes random city information, user email, and  to mongoDB
+  //* 3- emails random city information to user
+
+  const onSubmit = async (data, r) => {
+    let random_city = await API.createLocation();
+    let new_trip = await API.createTrip({
+      email: data.email,
+      trip: [{ ...random_city.data }],
+    });
     sendEmail(
       serviceID,
       templateID,
       {
         email: data.email,
-        Zipcode: data.Zipcode,
+        trip_info: JSON.stringify(new_trip),
       },
       userID
     );
@@ -73,9 +71,7 @@ function RandomCards() {
               className="text-center "
             >
               <div className="blockquote mb-0 card-body">
-                <h4 style={{ marginTop: "1rem" }}>
-                  Step 1 - Enter your Email and Zipcode
-                </h4>
+                <h4 style={{ marginTop: "1rem" }}>Step 1 - Enter your Email</h4>
                 {/* EMAIL INPUT */}
                 <input
                   type="email"
@@ -92,24 +88,6 @@ function RandomCards() {
                 ></input>
                 <span className="error-message">
                   {errors.email && errors.email.message}
-                </span>
-                {/* Zipcode INPUT */}
-                <input
-                  type="number"
-                  style={{ marginTop: "1rem" }}
-                  placeholder="Zipcode"
-                  name="Zipcode"
-                  ref={register({
-                    required: "Zipcode Required",
-
-                    maxLength: {
-                      value: 5,
-                      message: "Zipcode are 5 digits",
-                    },
-                  })}
-                ></input>
-                <span className="error-message">
-                  {errors.Zipcode && errors.Zipcode.message}
                 </span>
 
                 <h4 style={{ marginTop: "1rem" }}>

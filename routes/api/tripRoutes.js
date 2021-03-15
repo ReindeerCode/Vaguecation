@@ -6,11 +6,10 @@ router.route("/trips").post((req, res) => {
   console.log(req.body, "this is our body request");
   const tripSeed = [
     {
-      day: new Date(),
       email: req.body.email,
       trip: [
         {
-          homeZip: req.body.trip[0].homeZip,
+          day: new Date(),
           city: req.body.trip[0].city,
           region: req.body.trip[0].region,
           country: req.body.trip[0].country,

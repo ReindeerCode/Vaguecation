@@ -30,8 +30,8 @@ function RandomCards() {
 
   //* clicking any image button submits form does three things//
   //* 1 - calls api to retrieve random city information
-  //* 2 - writes random city information, user email, and  to mongoDB
-  //* 3- emails random city information to user
+  //* 2 - writes random city information and user email to mongoDB
+  //* 3- emails random city information to email entered by user
 
   const onSubmit = async (data, r) => {
     let random_city = await API.createLocation();
@@ -65,7 +65,7 @@ function RandomCards() {
         <form onSubmit={handleSubmit(onSubmit)}>
           <Row id="stepsCard">
             <Card
-              style={{ maxWidth: "30rem" }}
+              style={{ maxWidth: "35rem" }}
               bg="primary"
               text="white"
               className="text-center "
@@ -86,16 +86,17 @@ function RandomCards() {
                     },
                   })}
                 ></input>
-                <span className="error-message">
+                <h4 style={{ color: "orange", marginTop: "1rem" }}>
                   {errors.email && errors.email.message}
-                </span>
-
+                </h4>
                 <h4 style={{ marginTop: "1rem" }}>
                   Step 2 - Click any image to be emailed a Vaguecation
                 </h4>
               </div>
               <div>
-                <span style={{ color: "black" }}>{successMessage}</span>
+                <h4 style={{ color: "orange", marginTop: "1rem" }}>
+                  {successMessage}
+                </h4>
               </div>
             </Card>
           </Row>

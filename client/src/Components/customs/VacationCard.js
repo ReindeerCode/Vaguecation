@@ -1,7 +1,6 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
 
-// const { REACT_APP_UNSPLASH_API_Key } = process.env;
 
 export const VacationCard = (props) => {
   return (

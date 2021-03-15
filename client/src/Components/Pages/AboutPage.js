@@ -4,7 +4,6 @@ import color_travel from "../../assets/color_tunnel.jpg";
 import waterfall from "../../assets/waterfall.jpg";
 import drive from "../../assets/drive.jpg";
 import "./AboutPage.css";
-// import { Container, Row, Col } from "react-bootstrap";
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
 function rockTravelImg() {
@@ -72,42 +71,42 @@ const About = () => {
           </MDBCol>
           <MDBCol style={{ marginTop: "2rem" }} id="about-text" md="6">
             <p>
-              Here at Vaguecation we hate CV. Like you, we're tired of sitting
-              at home. Want to be out there, vacationing. Eating unique food,
-              seeing amazing sights, meeting new people - that's the life for
-              us.
+              Like you, we at Vaguecation are tired of sitting at home. We want
+              to be out there, vacationing. Eating unique food, seeing amazing
+              sights, meeting new people - that's the life for us.
             </p>
             <p>
-              The first thought in our heads when we got stuck at home was to
-              plan an awesome vacation. With all this extra time on our hands
-              you'd think we would come up with the vacation to end all
-              vacations. We'll what really happened.
+              When we realized we were going to be stuck at home for a while the
+              first thought in our heads was to plan an awesome vacation. With
+              all this extra time on our hands you'd think we would come up with
+              the vacation to end all vacations. We'll that didn't happened.
             </p>
             <p>
               Instead we realized that, while we love vacationing, we hate
-              planning vacations. "Wouldn't it be great id we could push a
-              button and someone would just tell us where to go and what to do?
-              It could even be completely random, that would be a fun
-              adventure."
+              planning vacations. Then we thought, "Wouldn't it be great we
+              could push a button and someone would just tell us where to go and
+              what to do? It could even be completely random, that would be a
+              fun vacation."
             </p>
             <p>
               In that moment{" "}
               <span>
-                <u>vaguecation</u>
+                <strong>vaguecation</strong>
               </span>{" "}
               was born.{" "}
             </p>
             <p>
-              We decided with this time at home we'd create a website that would
-              do the work for us. Now all anyone has to do know they want to go
-              somewhere and Vaguecation with send you an email with the details.{" "}
+              We spent our time at home creating a website that could do the
+              planning work for us. Now all we have to do know is decided want
+              to go somewhere and Vaguecation will send us an email with the
+              details.{" "}
             </p>
 
             <h1 className="display-1">What's the catch?</h1>
             <p>
-              There's no catch. Go, don't go. Just click the button a hundred
-              times since you have time to. It doesn't cost you a dime and
-              maybe, just maybe, you'll have the vacation of a lifetime.
+              There's no catch. Go or don't go, it is totally up to you. We
+              don't charge you a dime and maybe, just maybe, you'll have the
+              vacation of a lifetime.
             </p>
           </MDBCol>
           <MDBCol md="3">

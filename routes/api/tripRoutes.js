@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 const Travel = require("../../models/vacationInfoFormat");
 
 router.route("/trips").post((req, res) => {
@@ -18,8 +18,6 @@ router.route("/trips").post((req, res) => {
     },
   ];
 
-  //   console.log(JSON.parse(tripSeed,null,1), "this is our seed");
-
   Travel.insertMany(tripSeed)
     .then((data) => {
       console.log(data);
@@ -28,21 +26,6 @@ router.route("/trips").post((req, res) => {
     .catch((err) => {
       console.error(err);
     });
-
-  //   let email = req.body.email;
-  //   let trip = req.body.trip;
-  //   console.log(req.body);
-  //   let { email, trip } = req.body;
-  //   let newTravel = { email, trip };
-  //   Travel.insertMany([newTravel])
-  //     .then((results) => {
-  //       res.status(201).json(newTravel);
-  //       console.log(results);
-  //     })
-  //     .catch((err) => {
-  //       console.log("this our error");
-  //       console.error(err);
-  //     });
 });
 
 module.exports = router;

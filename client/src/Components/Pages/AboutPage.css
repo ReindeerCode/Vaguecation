@@ -69,9 +69,8 @@
     color: white;
   }
   .display-1 {
-    font-size: 3rem;
+    font-size: 2rem !important;
     color: orange;
-    /* font-weight: bold; */
   }
   h3 {
     font-size: 1.1rem;
@@ -98,14 +97,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* z-index: 2; */
-    /* background-color: rgba(0, 0, 0, 0.7); */
   }
 
   #tunnel {
-    margin-top: 5rem;
+    margin-top: -15rem;
   }
   #rock-img {
-    margin-top: -30%;
+    margin-top: -15rem;
   }
 }

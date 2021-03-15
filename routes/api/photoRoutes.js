@@ -10,7 +10,7 @@ const unsplash = createApi({
 
 router.route("/random").get((req, res) => {
   unsplash.photos
-    .getRandom({ count: 10, query: "travel" })
+    .getRandom({ count: 6, query: "travel" })
     .then((response) => {
       res.json(response);
     })
@@ -18,13 +18,5 @@ router.route("/random").get((req, res) => {
       res.send(err);
     });
 });
-
-// router.route("/photos").get((req, res) => {
-//   unsplash.search
-//     .getPhotos({ query: "travel", per_page: 5 })
-//     .then((results) => {
-//       res.json(results);
-//     });
-// });
 
 module.exports = router;

@@ -5,22 +5,22 @@ import { VacationCard } from "../customs/VacationCard";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
 import { API } from "../Utils/API";
-require("dotenv").config();
+// require("dotenv").config();
 
-const {
-  REACT_APP_SERVICE_ID,
-  REACT_APP_VACATION_TEMPLATE_ID,
-  REACT_APP_USER_ID,
-} = process.env;
+// const {
+//   REACT_APP_SERVICE_ID,
+//   REACT_APP_VACATION_TEMPLATE_ID,
+//   REACT_APP_USER_ID,
+// } = process.env;
 
 //* generates random vacation images in Randomize section on page load
 function RandomCards() {
   const [results, setResults] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
   const { register, handleSubmit, errors } = useForm();
-  const serviceID = `${REACT_APP_SERVICE_ID}`;
-  const templateID = `${REACT_APP_VACATION_TEMPLATE_ID}`;
-  const userID = `${REACT_APP_USER_ID}`;
+  const serviceID = "service_w8qt8iu";
+  const templateID = "template_8ombplq";
+  const userID = "user_mvnMabWzmIj0perWUEN5p";
 
   useEffect(() => {
     API.getRandom().then((res) => {
@@ -43,8 +43,8 @@ function RandomCards() {
     console.log({ new_trip, random_city });
     let trip_city = random_city.data.city;
     console.log(trip_city, "here is trip_city");
-    let trip_region = [{ ...random_city.data }];
-    let trip_country = [{ ...random_city.data }];
+    let trip_region = random_city.data.region;
+    let trip_country = random_city.data.country;
 
     sendEmail(
       serviceID,

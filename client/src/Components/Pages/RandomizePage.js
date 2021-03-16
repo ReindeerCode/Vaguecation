@@ -35,12 +35,13 @@ function RandomCards() {
 
   const onSubmit = async (data, r) => {
     let random_city = await API.createLocation();
-    console.log(random_city, "here is random_city");
+    // console.log(random_city, "here is random_city");
     let new_trip = await API.createTrip({
       email: data.email,
       trip: [{ ...random_city.data }],
     });
-    let trip_city = [{ ...random_city.data.trip[0].city }];
+    console.log({ new_trip, random_city });
+    let trip_city = random_city.data.city;
     console.log(trip_city, "here is trip_city");
     let trip_region = [{ ...random_city.data }];
     let trip_country = [{ ...random_city.data }];

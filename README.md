@@ -55,13 +55,13 @@ None at this time
 Following screen shot is of the landing page 
 ![Project Screenshot](./client/public/landingPage.png)
 
-About Us Page
+Following screen shot is of the about Us page
 ![Project Screenshot](./client/public/aboutPage.png)
 
-Create a Review
+Following screen shot is of the create Vaguecation page
 ![Project Screenshot](.//client/public/randomPage.png)
 
-Contact Review
+Following screen shot is of the contact us page
 ![Project Screenshot](./client/public/contactPage.png)
 
 

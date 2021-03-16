@@ -1,11 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+//* template for MongoDB Schema
 const travelSchema = new Schema({
-  // day: {
-  //   type: Date,
-  //   default: Date.now(),
-  // },
   email: {
     type: String,
     required: "Email is required",

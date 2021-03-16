@@ -15,18 +15,14 @@ let options = {
   },
 };
 
+//* request gets random city in USA information. Information is put into MongoDB and emailed to user
 router.route("/location").get((req, res) => {
   axios
     .request(options)
     .then(function (response) {
-      // console.log(response.data);
-      // res.json(response.data.data);
       let input = response.data.data;
-      // console.log(input, "input here");
       let amount = input.length;
-      // console.log(amount, "amount here");
       let randomArray = input[Math.floor(Math.random() * amount)];
-      // console.log(randomArray, "randomArray here");
       res.json(randomArray);
     })
     .catch((e) => console.error(e));

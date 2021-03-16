@@ -13,7 +13,7 @@ const {
   REACT_APP_USER_ID,
 } = process.env;
 
-//* generates random vacation images on page load
+//* generates random vacation images in Randomize section on page load
 function RandomCards() {
   const [results, setResults] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
@@ -35,16 +35,25 @@ function RandomCards() {
 
   const onSubmit = async (data, r) => {
     let random_city = await API.createLocation();
+    console.log(random_city, "here is random_city");
     let new_trip = await API.createTrip({
       email: data.email,
       trip: [{ ...random_city.data }],
     });
+    let trip_city = [{ ...random_city.data.trip[0].city }];
+    console.log(trip_city, "here is trip_city");
+    let trip_region = [{ ...random_city.data }];
+    let trip_country = [{ ...random_city.data }];
+
     sendEmail(
       serviceID,
       templateID,
       {
         email: data.email,
         trip_info: JSON.stringify(new_trip),
+        trip_city: JSON.stringify(trip_city),
+        trip_region: JSON.stringify(trip_region),
+        trip_country: JSON.stringify(trip_country),
       },
       userID
     );

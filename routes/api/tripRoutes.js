@@ -2,6 +2,7 @@ const router = require("express").Router();
 //const mongoose = require("mongoose");
 const Travel = require("../../models/vacationInfoFormat");
 
+//* puts data from rapid api call for random town information into mondoDB
 router.route("/trips").post((req, res) => {
   console.log(req.body, "this is our body request");
   const tripSeed = [

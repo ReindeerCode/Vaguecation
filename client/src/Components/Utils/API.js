@@ -1,5 +1,6 @@
 import axios from "axios";
 
+//* defines axios routes
 export const API = {
   createLocation: () => {
     return axios.get("/api/location/location");

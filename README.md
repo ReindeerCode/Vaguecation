@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Project: Vaguecation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deployed Site Link - > https://vaguecation.herokuapp.com/
 
-## Available Scripts
+Utilized emailjs-com, unsplash-js, and reCaptua as a new technologies.
 
-In the project directory, you can run:
 
-### `npm start`
+## Table of Contents:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Project: Vaguecation](#project-vaguecation)
+  - [Table of Contents:](#table-of-contents)
+  - [License:](#license)
+  - [Description:](#description)
+  - [Installation Instructions:](#installation-instructions)
+  - [Usage Instructions:](#usage-instructions)
+  - [Github:](#github)
+  - [Contact Us:](#contact-us)
+  - [Other Contributors:](#other-contributors)
+  - [Images:](#images)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## License:
 
-### `npm test`
+[![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Description:
 
-### `npm run build`
+Problem: 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Covid has people couped up and ready for a vacation. For many people the planning process is the least enjoyable part of a vacation, so why not skip it??? Vaguecation will provide the user with a random location to visit without a lot of hoops to jump through.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+With more development Vaguecation will be able to email users a randomly generated email package, complete with hotel, restaurant, and activity suggestions for each day the user is looking to get away.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Installation Instructions:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To install, type `npm install` into the terminal. This will install all the required node packages to run the server. Start the application by typing `npm start` into the terminal. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage Instructions: 
+To be emailed a Vaguecation location enter your email address and click any of the image buttons.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Github:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Check out more projects on my Github at https://github.com/ReindeerCode
 
-## Learn More
+## Contact Us:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If you have any questions please feel free to email me at ReindeerCode@gmail.com
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Other Contributors:
 
-### Code Splitting
+None at this time
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Images:
 
-### Analyzing the Bundle Size
+Following screen shot is of the landing page 
+![Project Screenshot](./client/public/landingPage.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+About Us Page
+![Project Screenshot](./client/public/aboutPage.png)
 
-### Making a Progressive Web App
+Create a Review
+![Project Screenshot](.//client/public/randomPage.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contact Review
+![Project Screenshot](./client/public/contactPage.png)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

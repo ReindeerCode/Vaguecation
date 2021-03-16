@@ -1,5 +1,5 @@
 const router = require("express").Router();
-// const mongoose = require("mongoose");
+//const mongoose = require("mongoose");
 const Travel = require("../../models/vacationInfoFormat");
 
 router.route("/trips").post((req, res) => {

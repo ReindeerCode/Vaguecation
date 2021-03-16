@@ -12,10 +12,10 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route path="/" exact component={Landing} />
-          <Route path="/about" component={About} />
-          <Route path="/randomize" component={RandomCards} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/" component={Landing} />
+          <Route path="/about" exact component={About} />
+          <Route path="/randomize" exact component={RandomCards} />
+          <Route path="/contact" exact component={Contact} />
         </Switch>
       </Router>
     </>

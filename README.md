@@ -2,7 +2,7 @@
 
 Deployed Site Link - > https://vaguecation.herokuapp.com/
 
-Utilized emailjs-com, unsplash-js, and reCaptua as a new technologies.
+Utilized emailjs-com, unsplash-js, and react-hook-form as a new technologies.
 
 
 ## Table of Contents:

@@ -1,6 +1,5 @@
 {
-  "homepage": "https://vaguecation.herokuapp.com/",
-  "name": "vaguecation",
+    "name": "vaguecation",
   "version": "0.1.0",
   "private": true,
   "main": "server.js",

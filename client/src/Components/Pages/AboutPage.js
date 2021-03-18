@@ -79,14 +79,14 @@ const About = () => {
               When we realized we were going to be stuck at home for a while the
               first thought in our heads was to plan an awesome vacation. With
               all this extra time on our hands you'd think we would come up with
-              the vacation to end all vacations. We'll that didn't happen.
+              the vacation to end all vacations. Well that didn't happen.
             </p>
             <p>
               Instead we realized that, while we love vacationing, we hate
-              planning vacations. Then we thought, "Wouldn't it be if we could
-              push a button and someone would just tell us where to go and what
-              to do? It could even be completely random, that would be a fun
-              vacation."
+              planning vacations. Then we thought, "Wouldn't it be great if we
+              could push a button and someone would just tell us where to go and
+              what to do? It could even be completely random, that would be a
+              fun vacation."
             </p>
             <p>
               In that moment{" "}

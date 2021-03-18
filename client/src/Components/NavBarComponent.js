@@ -52,7 +52,7 @@ function NavBar() {
                     to="#randomize"
                     scroll={(el) => scrollWithOffset(el)}
                   >
-                    <Button variant="primary">Randomize</Button>
+                    <Button variant="primary">Create Trip</Button>
                   </Link>
                   <Link
                     smooth={true}

@@ -11,7 +11,7 @@ const unsplash = createApi({
 //* gets 6 random photos from Unsplash api for use in Randomize section
 router.route("/random").get((req, res) => {
   unsplash.photos
-    .getRandom({ count: 6, query: "travel" })
+    .getRandom({ count: 7, query: "travel" })
     .then((response) => {
       res.json(response);
     })

@@ -83,10 +83,10 @@ const About = () => {
             </p>
             <p>
               Instead we realized that, while we love vacationing, we hate
-              planning vacations. Then we thought, "Wouldn't it be great we
-              could push a button and someone would just tell us where to go and
-              what to do? It could even be completely random, that would be a
-              fun vacation."
+              planning vacations. Then we thought, "Wouldn't it be if we could
+              push a button and someone would just tell us where to go and what
+              to do? It could even be completely random, that would be a fun
+              vacation."
             </p>
             <p>
               In that moment{" "}
@@ -97,7 +97,7 @@ const About = () => {
             </p>
             <p>
               We spent our time at home creating a website that could do the
-              planning work for us. Now all we have to do know is decided want
+              planning work for us. All we have to do now is know that we want
               to go somewhere and Vaguecation will send us an email with the
               details.{" "}
             </p>

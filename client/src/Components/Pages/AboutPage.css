@@ -18,6 +18,8 @@
 #about-text {
   color: whitesmoke;
   word-spacing: 0.8em;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 #about {

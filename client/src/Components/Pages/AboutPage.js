@@ -102,7 +102,7 @@ const About = () => {
               details.{" "}
             </p>
 
-            <h1 className="display-1">What's the catch?</h1>
+            <h1 className="display-1">OK, What's the catch?</h1>
             <p>
               There's no catch. Go or don't go, it is totally up to you. We
               don't charge you a dime and maybe, just maybe, you'll have the

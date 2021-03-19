@@ -104,12 +104,12 @@ function RandomCards() {
                   Step 2 - Click any image to be emailed a Vaguecation
                 </h4>
               </div>
-              <div>
-                <h4 style={{ color: "orange", marginTop: "1rem" }}>
-                  {successMessage}
-                </h4>
-              </div>
             </Card>
+            <div>
+              <h4 style={{ color: "orange", marginTop: "1rem" }}>
+                {successMessage}
+              </h4>
+            </div>
           </Row>
 
           <CardColumns>
@@ -121,6 +121,17 @@ function RandomCards() {
                 })
               : ""}
           </CardColumns>
+          <div
+            style={{
+              color: "orange",
+              marginTop: "1rem",
+              marginRight: "auto",
+              marginLeft: "auto",
+              width: "32rem",
+            }}
+          >
+            <h4>{successMessage}</h4>
+          </div>
         </form>
       </Container>
     </>

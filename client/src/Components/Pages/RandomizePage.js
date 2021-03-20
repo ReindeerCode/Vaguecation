@@ -125,7 +125,7 @@ function RandomCards() {
               width: "32rem",
             }}
           >
-            <h4>{successMessage}</h4>
+            <h2>{successMessage}</h2>
           </div>
         </form>
       </Container>

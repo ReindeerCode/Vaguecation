@@ -78,9 +78,6 @@ function RandomCards() {
               text="white"
               className="text-center "
             >
-              <h4 style={{ color: "orange", marginTop: "1rem" }}>
-                {successMessage}
-              </h4>
               <div className="blockquote mb-0 card-body">
                 <h4 style={{ marginTop: "1rem" }}>Step 1 - Enter your Email</h4>
                 {/* EMAIL INPUT */}
@@ -103,13 +100,11 @@ function RandomCards() {
                 <h4 style={{ marginTop: "1rem" }}>
                   Step 2 - Click any image to be emailed a Vaguecation
                 </h4>
+                <h4 style={{ color: "orange", marginTop: "1rem" }}>
+                  {successMessage}
+                </h4>
               </div>
             </Card>
-            <div>
-              <h4 style={{ color: "orange", marginTop: "1rem" }}>
-                {successMessage}
-              </h4>
-            </div>
           </Row>
 
           <CardColumns>
